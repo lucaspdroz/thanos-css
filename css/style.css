@@ -16,8 +16,8 @@ body {
 
 .imgBox {
     position: relative;
-    width: 591px;
-    height: 1352px;
+    width: var(--width);
+    height: var(--height);
 }
 
 .imgBox img:nth-child(1) {
@@ -38,13 +38,13 @@ body {
 }
 
 .imgBox img:nth-child(2) {
-   width: 1200px;
-   height: 1352px;
-   transform: translateX(1200px) scaleX(0);
+   width: var(--offset-x);
+   height: var(--height);
+   transform: translateX(var(--width)) scaleX(0);
    transform-origin: left;
 }
 
 .imgBox:hover img:nth-child(2) {
     transition: 8s;
-    transform: translateX(-1200px) scaleX(2);
+    transform: translateX(calc(var(--offset-x) * -1)) scaleX(2);
 }

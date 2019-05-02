@@ -14,13 +14,13 @@ body {
     overflow: hidden;
 }
 
-.imgBox {
+.wraper {
     position: relative;
     width: var(--width);
     height: var(--height);
 }
 
-.imgBox img:nth-child(1) {
+.wraper img:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ body {
     transform-origin: left;
 }
 
-.imgBox:hover img:nth-child(1) {
+.wraper:hover img:nth-child(1) {
     transition: 4s;
     transition-delay: 0.1s;
     transform: translateX(50px);
@@ -37,14 +37,14 @@ body {
     filter: blur(10px);
 }
 
-.imgBox img:nth-child(2) {
+.wraper img:nth-child(2) {
    width: var(--offset-x);
    height: var(--height);
    transform: translateX(var(--width)) scaleX(0);
    transform-origin: left;
 }
 
-.imgBox:hover img:nth-child(2) {
+.wraper:hover img:nth-child(2) {
     transition: 8s;
     transform: translateX(calc(var(--offset-x) * -1)) scaleX(2);
 }
